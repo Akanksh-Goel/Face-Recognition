@@ -1,0 +1,15 @@
+{%extends 'faceReg/base.html' %}
+{%load static%}
+    {%block content%}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#">Eligibility Checker</a>
+                    <!-- <small class="text-muted">{{ post.date_posted }}</small> -->
+                </div>
+            <h2><a class="article-title" href="#" id="result">{{result}}</a></h2>
+            <!-- <p class="article-content">{{ post.content }}</p> -->
+            </div>
+        </article>
+        <img src="{%static 'result.jpg'%}" alt="{{result}}">
+    {%endblock%}
